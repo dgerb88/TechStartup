@@ -30,7 +30,7 @@ class PostTableViewCell: UITableViewCell {
     func update(with post: Post) {
         userLabel.text = post.user
         titleLabel.text = post.title
-        commentsLabel.text = post.comments.joined(separator: "\n-----------------------------------------------\n")
+        commentsLabel.text = post.comments.joined(separator: "\n------------------------------------------\n")
         bodyLabel.text = post.bodyText
         dateLabel.text = post.date.formatted(date: .abbreviated, time: .omitted)
     }
